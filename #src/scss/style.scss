@@ -1,0 +1,17 @@
+//ОСНОВНЫЕ СТИЛИ
+@import "mixins.scss";
+@import "reset_style.scss";
+@import "origin_style.scss";
+
+
+
+//ИНДИВИДУАЛЬНЫЕ
+
+@import "header.scss";
+@import "menu.scss";
+@import "sec_first-screen.scss";
+@import "sec_second-screen.scss";
+@import "sec_third-screen.scss";
+
+@import "footer.scss";
+@import "modal.scss";

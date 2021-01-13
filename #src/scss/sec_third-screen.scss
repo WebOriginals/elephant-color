@@ -1,0 +1,125 @@
+.sec_third-screen{
+  padding: 75px 0;
+  @include mq('tablet') {
+    padding: 95px 0 100px;
+  }
+  @include mq('2K') {
+    padding: 125px 0 150px;
+  }
+}
+
+.third-screen__title{
+  @include adaptiv-margin-bottom(100,70);
+}
+
+.scrol-blocl{
+  @include maq('tablet') {
+    overflow: hidden;
+    position: relative;
+  }
+}
+.tabs-items{
+  @include maq('tablet') {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  @include adaptiv-margin-bottom(55,60);
+}
+.tabs-items__li{
+  @include maq('tablet') {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+  }
+
+  &:not(:last-child){
+    margin-right: 15px;
+  }
+  @include mq('tablet') {
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+    margin-top: 13px;
+  }
+  position: relative;
+}
+.tabs-items__link{
+  @include maq('tablet') {
+    flex: 0 0 auto;
+  }
+  color: $color2;
+  position: relative;
+  padding: 15px 20px;
+  border: 1px solid $color2;
+  display: block;
+  &.active,
+  &:hover{
+    border: 1px solid $color3;
+    color: $color3;
+  }
+}
+
+.tab-content__title{
+  @include adaptiv-font(20,16);
+  font-weight: bold;
+  color: $color3;
+  @include adaptiv-margin-bottom(40,25);
+}
+
+.tab-content__text{
+  @include adaptiv-font(16,14);
+  @include adaptiv-margin-bottom(30,30);
+}
+
+.tab-content__subtitle{
+  @include adaptiv-font(20,16);
+  @include adaptiv-margin-bottom(25,25);
+}
+
+.tab-content__list{
+  li{
+    @include adaptiv-margin-bottom(20,15);
+    @include adaptiv-font(16,14);
+  }
+}
+
+.tab-content__img{
+  width: 100%;
+  height: 280px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include maq('tablet') {
+    margin-bottom: 40px;
+  }
+  @include mq('tablet') {
+    width: 30%;
+    height: 200px;
+  }
+  @include mq('tablet-wide') {
+    width: 30%;
+    height: 270px;
+  }
+  @include mq('desktop1350') {
+    height: 360px;
+  }
+
+}
+
+.tab-content__descript{
+  width: 100%;
+  @include mq('tablet') {
+    width: 68%;
+    padding-left: 30px;
+  }
+  @include mq('tablet-wide') {
+    padding-left: 50px;
+  }
+}
+.wrapper-tab-conten{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}

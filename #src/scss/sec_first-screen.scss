@@ -1,0 +1,59 @@
+.sec_first-screen{
+  padding: 30px 0 75px;
+
+  @if( $link-img == ''){
+    background-image: url("../img/sec1-1.png");
+  } @else {
+    background-image: url( $link-img + "/img/sec1-1.png");
+  }
+  background-repeat: no-repeat;
+  background-position: 100px center;
+
+  background-size: contain;
+
+  @include mq('tablet') {
+    margin-left: 25px;
+    padding: 115px 0 109px;
+
+    background-position: right center;
+  }
+  @include mq('desktop1350') {
+    margin-left: 25px;
+
+  }
+  @include mq('2K') {
+    margin-left: 25px;
+    padding: 170px 0 180px;
+
+  }
+
+}
+.wrapper-first-content{
+  padding: 0 15px;
+
+  @include mq('tablet-wide') {
+    margin-left: 25px;
+  }
+  @include mq('desktop') {
+    margin-left: 200px;
+  }
+  @include mq('3K') {
+    margin-left: 400px;
+  }
+
+
+}
+.first-screen__title{
+  @include adaptiv-margin-bottom(50,35);
+  span{
+    color: $color3;
+  }
+}
+.first-screen__list{
+  li{
+    @include adaptiv-margin-bottom(20,20);
+    @include adaptiv-font(20,16);
+    line-height: 1.2;
+  }
+  @include adaptiv-margin-bottom(100,75);
+}

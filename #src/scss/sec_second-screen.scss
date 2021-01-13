@@ -1,0 +1,118 @@
+.sec_second-screen{
+  padding: 75px 0 ;
+  background-repeat: no-repeat;
+  background-position: center 165px;
+  background-size: cover;
+  @include mq('tablet') {
+    padding: 130px 0 100px;
+    background-position: center 255px;
+  }
+
+  @include mq('2K') {
+    padding: 180px 0 125px;
+    background-position: center 355px;
+  }
+}
+
+.second-screen__title{
+  @include adaptiv-margin-bottom(211,80);
+}
+
+.item-chart{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 35px;
+  &:not(:first-child){
+    padding-top: 35px;
+  }
+  @include maq('tablet') {
+    @if ($link-img == '') {
+      background-image: url("../img/ic/Line_m.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/Line_m.svg");
+    }
+    flex-direction: column;
+  }
+  @include mq('tablet') {
+    @if ($link-img == '') {
+      background-image: url("../img/ic/Line_d.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/Line_d.svg");
+    }
+    flex-direction: row;
+  }
+
+}
+.item-chart__scale{
+    margin-bottom: 50px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  @include mq('tablet') {
+    width: 30%;
+    height: 198px;
+    margin-bottom: 0px;
+    align-self: center;
+  }
+  @include mq('desktop') {
+    height: 260px;
+  }
+
+}
+.scale{
+  display: flex;
+  width: 198px;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 198px;
+  justify-content: center;
+  svg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .scale__title{
+    align-self: center;
+    @include adaptiv-font(20,16);
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+  }
+  @include mq('desktop') {
+    width: 260px;
+    min-height: 260px;
+    margin-right:auto;
+  }
+}
+
+.item-chart__content{
+  @include mq('tablet') {
+    width: 70%;
+    padding-left: 30px;
+  }
+  .item-chart__title{
+    @include adaptiv-font(20,16);
+    font-weight: bold;
+    color: $color3;
+    @include adaptiv-margin-bottom(15,20);
+  }
+  .item-chart__text{
+    @include adaptiv-font(16,14);
+    @include adaptiv-margin-bottom(30,45);
+  }
+  .item-chart__subtitle{
+    @include adaptiv-font(20,16);
+    @include adaptiv-margin-bottom(25,25);
+  }
+  .item-chart__list{
+    li{
+      @include adaptiv-margin-bottom(20,15);
+      @include adaptiv-font(16,14);
+    }
+  }
+}

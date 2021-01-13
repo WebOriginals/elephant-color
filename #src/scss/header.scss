@@ -1,0 +1,104 @@
+.sec-header {
+  padding: 10px 20px;
+  @include mq('tablet-990') {
+    padding: 40px;
+  }
+}
+
+
+.body-header {
+  @extend %flex;
+  justify-content: space-between;
+}
+
+.wrapper-phone {
+  display: none;
+  @include mq('tablet-wide') {
+    display: block;
+    align-self: center;
+  }
+
+  a {
+    color: $color2;
+    text-decoration: none;
+    font-weight: 500;
+    @include adaptiv-font(20, 16);
+
+    &:hover {
+      color: $color3;
+    }
+  }
+
+}
+
+.wraper-logo {
+  width: 90px;
+  align-self: center;
+
+  @include mq('tablet-wide') {
+    width: 160px;
+    margin: 0 auto 0 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.wrapper-callback {
+  display: none;
+  @include mq('tablet-wide') {
+    display: block;
+    align-self: center;
+    margin: auto;
+  }
+
+  a {
+    display: block;
+    padding: 0 0 3px 0;
+    color: $color2;
+    @include adaptiv-font(16, 16);
+    border-bottom: 1px dashed $color2;
+
+    &:hover {
+      color: $color3;
+      border-bottom: 1px dashed $color3;
+    }
+  }
+}
+
+.wrapper-soc {
+  align-self: center;
+  @include mq('tablet-wide') {
+    margin: auto;
+  }
+
+  a {
+    @media(max-width: 991px) {
+      &:not(:last-child) {
+        display: none;
+      }
+    }
+
+    @media(min-width: 991px) {
+      &:last-child {
+        display: none;
+      }
+
+    }
+
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: $color3;
+        }
+      }
+    }
+  }
+}
