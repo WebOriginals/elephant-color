@@ -1,0 +1,122 @@
+.sec-tenth-screen{
+  padding: 50px 0;
+  @include maq('desktop') {
+    background: none !important;
+  }
+  @include mq('tablet') {
+    padding: 75px 0 ;
+  }
+
+  @include mq('2K') {
+    padding: 100px 0 ;
+  }
+  background-position: -4% 54%;
+  background-size: 56%;
+  background-repeat: no-repeat;
+}
+
+.visibl-inp-file{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &:hover{
+
+    path{
+      fill: $color3;
+    }
+    circle{
+      stroke: $color3;
+    }
+    .visibl-inp-file__text{
+      color: $color3;
+    }
+  }
+}
+
+.visibl-inp-file__text{
+  margin-left: 25px;
+  align-self: center;
+}
+.ask-inp-file{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.ask-inp{
+  &:not(:last-child){
+    margin-bottom: 25px;
+  }
+  padding: 10px 5px 5px 0;
+  width: 100%;
+  background: none;
+  border-bottom: 1px solid $color2;
+  color: $color2;
+  @include adaptiv-font(16,14);
+  &::placeholder{
+    color: $color2;
+    @include adaptiv-font(16,14);
+  }
+}
+
+.wrapper-fotm{
+  @include mq('tablet') {
+    width: 555px;
+    margin: auto;
+  }
+  @include mq('desktop') {
+    margin-right:0;
+  }
+}
+
+.form-ask{
+  padding:25px 15px 45px;
+  background: #1c1c1c;
+
+  @include mq('tablet-small') {
+    padding:48px 48px 50px;
+  }
+
+
+}
+
+.polit{
+
+  a{
+    color: $color2;
+    &:hover{
+      color: $color3;
+    }
+  }
+}
+
+.form-ask__btn{
+  text-align: center;
+  padding: 20px 50px;
+  border: 1px solid $color2;
+  color: $color2;
+  width: 220px;
+  margin: auto;
+  cursor: pointer;
+  @include adaptiv-font(16,14);
+  &:hover{
+    border: 1px solid $color1;
+    color: $color1;
+    background: $color2;
+  }
+
+}
+
+.form-text{
+  @include adaptiv-font(20,16);
+  font-weight: bold;
+  text-align: center;
+  @include adaptiv-margin-bottom(40,40);
+}
