@@ -678,6 +678,18 @@ body {
   width: 100%;
 }
 
+.sec_fourth-screen {
+  padding: 50px 0;
+}
+
+.call-to-action {
+  font-size: calc(25px + 11 * ((100vw - 320px) / 1600));
+}
+
+.call-to-action span {
+  color: #F5DF4D;
+}
+
 .footer {
   padding: 20px;
   color: #fff;
@@ -903,6 +915,10 @@ body {
     width: 68%;
     padding-left: 30px;
   }
+
+  .sec_fourth-screen {
+    padding: 75px 0;
+  }
 }
 
 @media only screen and (min-width: 990px) {
@@ -1098,6 +1114,10 @@ body {
     padding: 125px 0 150px;
   }
 
+  .sec_fourth-screen {
+    padding: 100px 0;
+  }
+
   .footer-phone {
     padding: 5px 8% 5px 8%;
   }
@@ -1147,6 +1167,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 989px) {
+  .call-to-action {
+    margin-bottom: 35px;
+  }
+
+  .call-to-action_btn {
+    margin: auto;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .item-chart {
     background-image: url("../img/ic/Line_m.svg");
@@ -1189,5 +1219,11 @@ body {
 
   .tab-content__img {
     margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  .call-to-action {
+    text-align: center;
   }
 }
