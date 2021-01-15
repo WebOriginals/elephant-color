@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  @include mq('tablet-wide') {
+  @include mq('tablet') {
     flex-direction: row;
   }
 }

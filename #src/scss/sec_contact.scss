@@ -1,0 +1,120 @@
+.sec_contants {
+  padding: 50px 0;
+
+  @include mq('tablet') {
+    padding: 75px 0;
+  }
+
+  @include mq('2K') {
+    padding: 100px 0;
+  }
+}
+
+.cotnact__title {
+  @include adaptiv-margin-bottom(100, 70);
+}
+
+.body-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contacts-info {
+  width: 100%;
+  align-self: center;
+
+  @include maq('tablet') {
+    order: 2;
+  }
+
+  @include mq('tablet') {
+    width: 41%;
+  }
+}
+
+.contacts-info__title {
+  @include adaptiv-font(20, 16);
+  @include adaptiv-margin-bottom(22, 15);
+
+  &:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+
+.contacts-info__list {
+  li {
+    @include adaptiv-font(16, 14);
+    margin-bottom: 10px;
+  }
+}
+
+.contacts-info__link {
+  display: block;
+  color: $color2;
+  padding-top: 3px;
+  margin-bottom: 15px;
+
+  &:hover {
+    color: $color3;
+
+    path {
+      fill: $color3;
+    }
+  }
+
+  span {
+    margin-left: 20px;
+  }
+}
+
+.contacts-info__soc {
+
+  margin-top: 30px;
+
+  @include mq('tablet') {
+    margin-top: 50px;
+  }
+
+  a {
+    margin-right: 20px;
+
+    &:hover {
+
+      path {
+        fill: $color3;
+      }
+    }
+  }
+
+}
+
+.contacts-map {
+  width: 100%;
+  position: relative;
+
+  @include maq('tablet') {
+    margin-bottom: 40px;
+
+  }
+  @include mq('tablet') {
+    width: 58%;
+    padding-left: 30px;
+  }
+
+  #map {
+    width: 100%;
+    height: 230px;
+
+    @include maq('tablet') {
+      order: 1;
+    }
+    @include mq('tablet') {
+      height: 480px;
+    }
+    @include mq('desktop') {
+      height: 540px;
+    }
+  }
+
+}
