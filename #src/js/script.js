@@ -1,5 +1,5 @@
 @@include('menu.js')
 @@include('file-inp.js')
-
+@@include('slider.js')
 @@include('portfolio.js')
 @@include('map.js')

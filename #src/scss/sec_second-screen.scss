@@ -6,6 +6,7 @@
   @include mq('tablet') {
     padding: 130px 0 100px;
     background-position: center 255px;
+    margin-bottom: 50px;
   }
 
   @include mq('2K') {

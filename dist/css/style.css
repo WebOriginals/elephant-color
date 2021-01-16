@@ -417,7 +417,7 @@ body {
   background: #000;
   position: fixed;
   width: 100%;
-  height: 91%;
+  height: 93%;
   left: -100%;
   top: 58px;
   margin: 0;
@@ -602,7 +602,7 @@ body {
 }
 
 .sec_third-screen {
-  padding: 75px 0;
+  padding: 75px 0 50px;
 }
 
 .third-screen__title {
@@ -680,6 +680,7 @@ body {
 
 .sec_slider {
   position: relative;
+  padding: 50px 0;
 }
 
 .sleder__title {
@@ -711,7 +712,8 @@ body {
 
 .body-slider-color {
   position: relative;
-  width: 510px;
+  width: 100%;
+  margin: 40px 0;
 }
 
 .color-container {
@@ -790,14 +792,19 @@ body {
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.11);
   -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.11);
   -moz-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.11);
+  width: 100%;
 }
 
-.color-slide.swiper-slide-thumb-active img {
+.color-slide.swiper-slide-active img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
   border: 1px solid #F5DF4D;
   border-radius: 7px;
+}
+
+.title-besctop {
+  display: none;
 }
 
 .sec_fourth-screen {
@@ -813,7 +820,7 @@ body {
 }
 
 .sec_portfolio {
-  padding: 50px 0;
+  padding: 75px 0 50px;
   overflow: hidden;
 }
 
@@ -846,6 +853,10 @@ body {
 
 .invis {
   display: none;
+}
+
+.invis img {
+  width: 100%;
 }
 
 .hover-shou {
@@ -1537,6 +1548,7 @@ body {
   .sec_second-screen {
     padding: 130px 0 100px;
     background-position: center 255px;
+    margin-bottom: 50px;
   }
 
   .item-chart {
@@ -1580,6 +1592,15 @@ body {
   .tab-content__descript {
     width: 68%;
     padding-left: 30px;
+  }
+
+  .sec_slider {
+    padding: 75px 0;
+  }
+
+  .body-slider-color {
+    width: 400px;
+    margin: 40px auto;
   }
 
   .sec_fourth-screen {
@@ -1887,13 +1908,39 @@ body {
     margin-right: auto;
   }
 
+  .sec_slider {
+    padding: 0;
+    margin: 100px 0;
+  }
+
   .body-slider-descript {
     width: 555px;
+    margin: 30px 0  0 auto;
+  }
+
+  .transform {
+    position: absolute;
+    top: 54px;
+    width: 100%;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .descript-slide {
     padding: 30px;
     background: rgba(0, 0, 0, 0.7);
+  }
+
+  .title-besctop {
+    display: block;
+  }
+
+  .title-mobile {
+    display: none;
   }
 
   .portfolio-img {
@@ -1960,6 +2007,11 @@ body {
     height: 360px;
   }
 
+  .body-slider-color {
+    width: 510px;
+    margin: auto;
+  }
+
   .profitably-description {
     width: 70%;
     -ms-flex-item-align: center;
@@ -2017,7 +2069,7 @@ body {
   }
 
   .sec_third-screen {
-    padding: 125px 0 150px;
+    padding: 125px 0 100px;
   }
 
   .sec_fourth-screen {
@@ -2182,6 +2234,10 @@ body {
 
   .tab-content__img {
     margin-bottom: 40px;
+  }
+
+  .wrapper-nav {
+    display: none;
   }
 
   .contacts-info {

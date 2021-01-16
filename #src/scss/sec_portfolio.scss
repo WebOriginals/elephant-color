@@ -1,5 +1,5 @@
 .sec_portfolio {
-  padding: 50px 0;
+  padding: 75px 0 50px;
   overflow: hidden;
   @include mq('tablet') {
     padding: 75px 0;
@@ -128,6 +128,9 @@
 
 .invis {
   display: none;
+  img{
+    width: 100%;
+  }
 }
 
 .hover-shou {

@@ -1,10 +1,10 @@
 .sec_third-screen{
-  padding: 75px 0;
+  padding: 75px 0 50px;
   @include mq('tablet') {
     padding: 95px 0 100px;
   }
   @include mq('2K') {
-    padding: 125px 0 150px;
+    padding: 125px 0 100px;
   }
 }
 

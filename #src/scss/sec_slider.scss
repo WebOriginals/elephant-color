@@ -1,5 +1,13 @@
 .sec_slider {
   position: relative;
+  padding: 50px 0;
+  @include mq('tablet') {
+    padding: 75px 0 ;
+  }
+  @include mq('desktop') {
+    padding: 0 ;
+    margin: 100px 0;
+  }
 }
 
 .sleder__title {
@@ -11,6 +19,7 @@
 .background-container {
   width: 100%;
   height: 100%;
+
 }
 
 .background-slide {
@@ -30,12 +39,24 @@
   background: #1c1c1c;
   img {
     width: 100%;
+    @include mq('desktop1350') {
+     // height: 98vh;
+    }
   }
 }
 
 .body-slider-color {
   position: relative;
-  width: 510px;
+  width: 100%;
+  margin: 40px 0;
+  @include mq('tablet') {
+    width: 400px;
+    margin: 40px auto;
+  }
+  @include mq('desktop1350') {
+    width: 510px;
+    margin: auto;
+  }
 }
 
 .color-container {
@@ -51,12 +72,12 @@
   justify-content: space-between;
   position: absolute;
   top: calc(50% - 21px);
-
+  @include maq('tablet') {
+    display: none;
+  }
   .color-button-next {
     margin-right: -80px;
-
   }
-
   .color-button-prev {
     margin-left: -80px;
   }
@@ -89,20 +110,21 @@
 .body-slider-descript {
   @include mq('desktop') {
     width: 555px;
+    margin: 30px 0  0 auto ;
   }
 }
 
-//.transform {
-//  @include mq('desktop') {
-//    position: absolute;
-//    top: 54px;
-//    width: 100%;
-//    left: 0;
-//    display: flex;
-//    flex-wrap: wrap;
-//
-//  }
-//}
+.transform {
+  @include mq('desktop') {
+    position: absolute;
+    top: 54px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
 
 .descript-slide{
   @include mq('desktop') {
@@ -136,23 +158,33 @@
     box-shadow:0px 6px 12px 0px rgba(0,0,0,0.11);
     -webkit-box-shadow:0px 6px 12px 0px rgba(0,0,0,0.11);
     -moz-box-shadow:0px 6px 12px 0px rgba(0,0,0,0.11);
+    width: 100%;
   }
 
 }
-//.color-slide.swiper-slide-active{
-//  img {
-//    transform: scale(1.1);
-//    border: 1px solid $color3;
-//    border-radius: 7px;
-//  }
-//}
-.color-slide.swiper-slide-thumb-active{
+.color-slide.swiper-slide-active{
   img {
     transform: scale(1.1);
     border: 1px solid $color3;
     border-radius: 7px;
   }
 }
+.title-besctop{
+  display: none;
+  @include mq('desktop') {
+    display: block;
+  }
+}
+.title-mobile{
+  @include mq('desktop') {
+   display: none;
+  }
+}
+.wrapper-secons-sl{
 
+}
+.body-slider-background{
+
+}
 
 
