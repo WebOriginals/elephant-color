@@ -1,0 +1,168 @@
+.sec_portfolio {
+  padding: 50px 0;
+  overflow: hidden;
+  @include mq('tablet') {
+    padding: 75px 0;
+  }
+  @include mq('2K') {
+    padding: 100px 0;
+  }
+}
+
+.portfolio__title {
+  @include adaptiv-margin-bottom(100, 70);
+}
+
+.portfolio-item {
+  padding: 0 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  @include mq('tablet') {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  @include mq('2K') {
+    width: 33.33%;
+  }
+  @include mq('3K') {
+    width: 25%;
+  }
+}
+
+.portfolio-item__hover {
+  transition: .5s;
+  display: none;
+  @include mq('tablet') {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+    opacity: 0;
+
+
+    .portfolio-item-hover__title {
+      background: rgba(0, 0, 0, 0.7);
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 15px;
+      @include adaptiv-font(30, 16);
+      text-align: right;
+    }
+    .portfolio-item-hover__descript {
+      display: flex;
+      padding: 15px;
+      flex-wrap: wrap;
+      background: $color2;
+      color: $color1;
+      width: 50%;
+      justify-content: center;
+
+      h2 {
+        @include adaptiv-font(16, 14);
+        margin: 0 0 15px 0;
+      }
+
+      p {
+        margin: 0 0 15px 0;
+        padding: 0;
+        @include adaptiv-font(16, 14);
+      }
+
+      ul {
+        margin: 0 0 15px 0;
+
+        li {
+          @include adaptiv-font(16, 14);
+        }
+      }
+    }
+    .wr-content {
+      align-self: center;
+    }
+    .wrbtn {
+      width: 100%;
+      margin-top: 40px;
+
+      .portfolio-item-hover__btn {
+        display: block;
+        @include adaptiv-font(16, 14);
+        border: 1px solid $color1;
+        color: $color1;
+        padding: 18px 35px;
+        text-align: center;
+
+        &:hover {
+          background: $color1;
+          color: $color2;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-img {
+  min-height: 333px;
+  max-height: 750px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  @include mq('tablet') {
+    height: 400px;
+    &:hover {
+      .portfolio-item__hover {
+        opacity: 1;
+
+      }
+    }
+  }
+  @include mq('desktop') {
+    height: 580px;
+  }
+  @include mq('2K') {
+    height: 750px;
+  }
+}
+
+.invis {
+  display: none;
+}
+
+.hover-shou {
+  display: block;
+}
+
+.btn-portfolio-text--bg {
+  padding: 10px 15px;
+  background: $color2;
+  color: $color1;
+}
+
+.btn-text {
+  text-align: center;
+  color: #939597;
+  font-size: 14px;
+  padding: 15px 15px 0;
+}
+
+.portfolio-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  z-index: 9;
+}
+
+.portfolio-desktop{
+  display: none;
+  @include mq('tablet') {
+    margin: 0;
+    display: flex;
+  }
+}
+.portfolio-mobil{
+  @include mq('tablet') {
+    display: none;
+  }
+}

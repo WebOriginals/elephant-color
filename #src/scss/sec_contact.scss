@@ -96,6 +96,7 @@
   @include maq('tablet') {
     margin-bottom: 40px;
 
+
   }
   @include mq('tablet') {
     width: 58%;
@@ -109,11 +110,26 @@
     @include maq('tablet') {
       order: 1;
     }
+    @include mq('phone-wide') {
+      height: 320px;
+    }
     @include mq('tablet') {
       height: 480px;
     }
     @include mq('desktop') {
       height: 540px;
+    }
+  }
+
+}
+
+.spase{
+  @include maq('tablet-small') {
+    padding: 0;
+    .contacts-info,
+    .cotnact__title{
+      margin-left: 15px;
+      margin-right: 15px;
     }
   }
 
