@@ -108,13 +108,13 @@
   @include mq('tablet-wide') {
     margin: 20px 0 40px;
   }
-  @include adaptiv-font(14, 12);
+  @include adaptiv-font(12, 12);
   font-weight: 300;
-  font-style: italic;
 
   a {
     text-decoration: underline;
     cursor: pointer;
+    color: $color2;
     &:hover{
       color: $color3;
     }

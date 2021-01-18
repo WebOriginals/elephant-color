@@ -33,13 +33,13 @@
   }
   @include mq('tablet-wide') {
     display: block;
-    width: 30%;
+    width: 40%;
   }
 }
 
 .order-descreeption{
   @include mq('tablet-wide') {
-    width: 70%;
+    width: 60%;
     padding-left: 50px;
   }
   @include mq('desktop-wide') {

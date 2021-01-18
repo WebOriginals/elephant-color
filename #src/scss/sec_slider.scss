@@ -86,13 +86,14 @@
 .color-ar {
   cursor: pointer;
   z-index: 9;
+  svg {
+    transition: .3s;
+    -webkit-filter: drop-shadow(0px 8px 1px #53535366);
+    filter: drop-shadow(0px 8px 1px #53535366);
+  }
 
   &:hover {
-    svg {
-      transition: .3s;
-      -webkit-filter: drop-shadow(0px 8px 1px #53535366);
-      filter: drop-shadow(0px 8px 1px #53535366);
-    }
+
 
     path {
       fill: $color3;

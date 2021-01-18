@@ -30,14 +30,17 @@
 }
 
 .portfolio-item__hover {
+  animation: load-lg 1.2s forwards;
   transition: .5s;
   display: none;
   @include mq('tablet') {
     display: flex;
-    width: 100%;
+    width: 0%;
     flex-wrap: wrap;
+    margin: auto;
     height: 100%;
     opacity: 0;
+    animation: shadow  2s infinite ease-in-out;
 
 
     .portfolio-item-hover__title {
@@ -48,6 +51,8 @@
       padding: 15px;
       @include adaptiv-font(30, 16);
       text-align: right;
+      transition: 2s;
+      opacity: 0;
     }
     .portfolio-item-hover__descript {
       display: flex;
@@ -58,22 +63,29 @@
       width: 50%;
       justify-content: center;
 
+
       h2 {
         @include adaptiv-font(16, 14);
         margin: 0 0 15px 0;
+        opacity: 0;
+        transition: 3.5s;
       }
 
       p {
         margin: 0 0 15px 0;
         padding: 0;
         @include adaptiv-font(16, 14);
+        opacity: 0;
+        transition: 3.5s;
       }
 
       ul {
         margin: 0 0 15px 0;
-
+        opacity: 0;
+        transition: 3.5s;
         li {
           @include adaptiv-font(16, 14);
+
         }
       }
     }
@@ -83,6 +95,8 @@
     .wrbtn {
       width: 100%;
       margin-top: 40px;
+      opacity: 0;
+      transition: 3.5s;
 
       .portfolio-item-hover__btn {
         display: block;
@@ -114,7 +128,25 @@
     &:hover {
       .portfolio-item__hover {
         opacity: 1;
+        width: 100%;
+        .portfolio-item-hover__title{
+          opacity: 1;
+        }
 
+        .portfolio-item-hover__descript{
+          h2{
+            opacity: 1;
+          }
+          p{
+            opacity: 1;
+          }
+          ul{
+            opacity: 1;
+          }
+        }
+        .wrbtn{
+          opacity: 1;
+        }
       }
     }
   }
@@ -169,3 +201,5 @@
     display: none;
   }
 }
+
+

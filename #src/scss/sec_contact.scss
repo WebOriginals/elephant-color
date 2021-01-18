@@ -64,7 +64,9 @@
   }
 
   span {
+    @include adaptiv-font(16, 14);
     margin-left: 20px;
+    font-weight: 300;
   }
 }
 
