@@ -30,17 +30,16 @@
 }
 
 .portfolio-item__hover {
-  animation: load-lg 1.2s forwards;
-  transition: .5s;
+  transition: .4s;
   display: none;
   @include mq('tablet') {
     display: flex;
-    width: 0%;
+    width: 10%;
     flex-wrap: wrap;
     margin: auto;
     height: 100%;
     opacity: 0;
-    animation: shadow  2s infinite ease-in-out;
+
 
 
     .portfolio-item-hover__title {
@@ -49,9 +48,9 @@
       display: flex;
       flex-wrap: wrap;
       padding: 15px;
-      @include adaptiv-font(30, 16);
+      font-size: 0;
       text-align: right;
-      transition: 2s;
+      transition: .2s;
       opacity: 0;
     }
     .portfolio-item-hover__descript {
@@ -65,27 +64,27 @@
 
 
       h2 {
-        @include adaptiv-font(16, 14);
+        font-size: 0;
         margin: 0 0 15px 0;
         opacity: 0;
-        transition: 3.5s;
+        transition: .3s;
+
       }
 
       p {
         margin: 0 0 15px 0;
         padding: 0;
-        @include adaptiv-font(16, 14);
+        font-size: 0;
         opacity: 0;
-        transition: 3.5s;
+        transition: .3s;
       }
 
       ul {
         margin: 0 0 15px 0;
         opacity: 0;
-        transition: 3.5s;
+        transition: .3s;
         li {
-          @include adaptiv-font(16, 14);
-
+          font-size: 0;
         }
       }
     }
@@ -96,7 +95,7 @@
       width: 100%;
       margin-top: 40px;
       opacity: 0;
-      transition: 3.5s;
+      transition: .3s;
 
       .portfolio-item-hover__btn {
         display: block;
@@ -129,19 +128,27 @@
       .portfolio-item__hover {
         opacity: 1;
         width: 100%;
+
+
         .portfolio-item-hover__title{
           opacity: 1;
+          @include adaptiv-font(30, 16);
         }
 
         .portfolio-item-hover__descript{
           h2{
+            @include adaptiv-font(16, 14);
             opacity: 1;
           }
           p{
+            @include adaptiv-font(16, 14);
             opacity: 1;
           }
           ul{
             opacity: 1;
+            li {
+              @include adaptiv-font(16, 14);
+            }
           }
         }
         .wrbtn{
@@ -201,5 +208,4 @@
     display: none;
   }
 }
-
 

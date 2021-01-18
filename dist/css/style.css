@@ -835,11 +835,9 @@ body {
 }
 
 .portfolio-item__hover {
-  -webkit-animation: load-lg 1.2s forwards;
-          animation: load-lg 1.2s forwards;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
   display: none;
 }
 
@@ -1616,14 +1614,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 0%;
+    width: 10%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: auto;
     height: 100%;
     opacity: 0;
-    -webkit-animation: shadow  2s infinite ease-in-out;
-            animation: shadow  2s infinite ease-in-out;
   }
 
   .portfolio-item__hover .portfolio-item-hover__title {
@@ -1635,11 +1631,11 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 15px;
-    font-size: calc(16px + 14 * ((100vw - 320px) / 1600));
+    font-size: 0;
     text-align: right;
-    -webkit-transition: 2s;
-    -o-transition: 2s;
-    transition: 2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
     opacity: 0;
   }
 
@@ -1659,34 +1655,34 @@ body {
   }
 
   .portfolio-item__hover .portfolio-item-hover__descript h2 {
-    font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+    font-size: 0;
     margin: 0 0 15px 0;
     opacity: 0;
-    -webkit-transition: 3.5s;
-    -o-transition: 3.5s;
-    transition: 3.5s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
   }
 
   .portfolio-item__hover .portfolio-item-hover__descript p {
     margin: 0 0 15px 0;
     padding: 0;
-    font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+    font-size: 0;
     opacity: 0;
-    -webkit-transition: 3.5s;
-    -o-transition: 3.5s;
-    transition: 3.5s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
   }
 
   .portfolio-item__hover .portfolio-item-hover__descript ul {
     margin: 0 0 15px 0;
     opacity: 0;
-    -webkit-transition: 3.5s;
-    -o-transition: 3.5s;
-    transition: 3.5s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
   }
 
   .portfolio-item__hover .portfolio-item-hover__descript ul li {
-    font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+    font-size: 0;
   }
 
   .portfolio-item__hover .wr-content {
@@ -1698,9 +1694,9 @@ body {
     width: 100%;
     margin-top: 40px;
     opacity: 0;
-    -webkit-transition: 3.5s;
-    -o-transition: 3.5s;
-    transition: 3.5s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
   }
 
   .portfolio-item__hover .wrbtn .portfolio-item-hover__btn {
@@ -1728,18 +1724,25 @@ body {
 
   .portfolio-img:hover .portfolio-item__hover .portfolio-item-hover__title {
     opacity: 1;
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1600));
   }
 
   .portfolio-img:hover .portfolio-item__hover .portfolio-item-hover__descript h2 {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
     opacity: 1;
   }
 
   .portfolio-img:hover .portfolio-item__hover .portfolio-item-hover__descript p {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
     opacity: 1;
   }
 
   .portfolio-img:hover .portfolio-item__hover .portfolio-item-hover__descript ul {
     opacity: 1;
+  }
+
+  .portfolio-img:hover .portfolio-item__hover .portfolio-item-hover__descript ul li {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
   }
 
   .portfolio-img:hover .portfolio-item__hover .wrbtn {
