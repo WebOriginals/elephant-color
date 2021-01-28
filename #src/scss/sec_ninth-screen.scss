@@ -31,7 +31,7 @@
 
   padding: 0 15px;
   img{
-    width: 100%;
+    max-width: 100%;
   }
   @include mq('tablet') {
     width: 33.33%;

@@ -21,7 +21,7 @@
     width: 50%;
     margin-bottom: 10px;
   }
-  @include mq('2K') {
+  @include mq('desktop1350') {
     width: 33.33%;
   }
   @include mq('3K') {
@@ -112,6 +112,53 @@
       }
     }
   }
+  @media only screen and (min-width: 1350px) and (max-width: 1600px){
+    .portfolio-item-hover__title {
+      background: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 15px;
+      font-size: 0;
+      text-align: right;
+      transition: .2s;
+      opacity: 0;
+    }
+    .portfolio-item-hover__descript {
+      display: flex;
+      padding: 15px;
+      flex-wrap: wrap;
+      background: $color2;
+      color: $color1;
+      width: 100%;
+      justify-content: center;
+
+
+      h2 {
+        margin: 0 0 15px 0;
+        opacity: 1;
+        transition: .5s;
+
+      }
+
+      p {
+        margin: 0 0 15px 0;
+        padding: 0;
+
+        opacity: 1;
+        transition: .5s;
+      }
+
+      ul {
+        margin: 0 0 15px 0;
+        opacity: 1;
+        transition: .5s;
+        li {
+
+        }
+      }
+    }
+  }
 }
 
 .portfolio-img {
@@ -137,7 +184,7 @@
 
         .portfolio-item-hover__descript{
           h2{
-            @include adaptiv-font(16, 14);
+            @include adaptiv-font(14, 14);
             opacity: 1;
           }
           p{

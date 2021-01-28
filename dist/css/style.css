@@ -184,7 +184,7 @@ body {
 
 .square li {
   padding-left: 33px;
-  background-image: url("../img/ic/square.svg");
+  background-image: url("/bitrix/templates/ln_slon/img/ic/square.svg");
   background-position: left 5px;
   background-repeat: no-repeat;
 }
@@ -481,7 +481,7 @@ body {
 
 .sec_first-screen {
   padding: 30px 0 75px;
-  background-image: url("../img/sec1-1.png");
+  background-image: url("/bitrix/templates/ln_slon/img/sec1-1.png");
   background-repeat: no-repeat;
   background-position: 100px center;
   background-size: contain;
@@ -773,15 +773,24 @@ body {
 
 .descript-slide__list {
   margin-bottom: calc(30px + -8 * ((100vw - 320px) / 1600));
+  padding-left: 40px;
 }
 
 .descript-slide__list li {
   font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
   margin-bottom: calc(10px + 0 * ((100vw - 320px) / 1600));
+  background-size: 5px;
+  padding-left: 15px;
+  background-position: left 8px;
 }
 
 .descript-slide__price {
   font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+}
+
+.descript-slide__price sup {
+  font-size: calc(8px + 2 * ((100vw - 320px) / 1600));
+  top: -10px;
 }
 
 .color-slide {
@@ -1090,7 +1099,7 @@ body {
 }
 
 .brends-items img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .sec-tenth-screen {
@@ -1546,7 +1555,7 @@ body {
   }
 
   .item-chart {
-    background-image: url("../img/ic/Line_d.svg");
+    background-image: url("/bitrix/templates/ln_slon/img/ic/Line_d.svg");
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1728,7 +1737,7 @@ body {
   }
 
   .portfolio-img:hover .portfolio-item__hover .portfolio-item-hover__descript h2 {
-    font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1600));
     opacity: 1;
   }
 
@@ -2019,7 +2028,7 @@ body {
 
   .elephant-modal-content {
     padding: 70px;
-    background-image: url("../img/modal.png");
+    background-image: url("/bitrix/templates/ln_slon/img/modal.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 47%;
@@ -2042,6 +2051,10 @@ body {
 }
 
 @media only screen and (min-width: 1350px) {
+  .wraper-logo {
+    width: 195px;
+  }
+
   .sec_first-screen {
     margin-left: 25px;
   }
@@ -2053,6 +2066,10 @@ body {
   .body-slider-color {
     width: 510px;
     margin: auto;
+  }
+
+  .portfolio-item {
+    width: 33.33%;
   }
 
   .profitably-description {
@@ -2121,10 +2138,6 @@ body {
 
   .sec_portfolio {
     padding: 100px 0;
-  }
-
-  .portfolio-item {
-    width: 33.33%;
   }
 
   .portfolio-img {
@@ -2237,7 +2250,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   .item-chart {
-    background-image: url("../img/ic/Line_m.svg");
+    background-image: url("/bitrix/templates/ln_slon/img/ic/Line_m.svg");
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2354,6 +2367,65 @@ body {
 @media only screen and (min-width: 600px) and (max-width: 991px) {
   .call-to-action {
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1350px) and (max-width: 1600px) {
+  .portfolio-item__hover .portfolio-item-hover__title {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px;
+    font-size: 0;
+    text-align: right;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    opacity: 0;
+  }
+
+  .portfolio-item__hover .portfolio-item-hover__descript {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: #fff;
+    color: #000;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .portfolio-item__hover .portfolio-item-hover__descript h2 {
+    margin: 0 0 15px 0;
+    opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+  }
+
+  .portfolio-item__hover .portfolio-item-hover__descript p {
+    margin: 0 0 15px 0;
+    padding: 0;
+    opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+  }
+
+  .portfolio-item__hover .portfolio-item-hover__descript ul {
+    margin: 0 0 15px 0;
+    opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
   }
 }
 

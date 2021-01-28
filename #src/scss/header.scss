@@ -39,6 +39,10 @@
     width: 160px;
     margin: 0 auto 0 0;
   }
+  @include mq('desktop1350') {
+    width: 195px;
+
+  }
 
   img {
     width: 100%;
