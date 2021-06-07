@@ -78,6 +78,21 @@
   }
 
   a {
+    color: $color2;
+    display: inline-flex;
+
+
+    &:hover{
+      color: $color3;
+    }
+
+    p{
+      align-self: center;
+      margin-bottom: 0;
+      margin-left: 15px;
+    }
+
+
     @media(max-width: 991px) {
       &:not(:last-child) {
         display: none;
@@ -91,7 +106,6 @@
 
     }
 
-    display: inline-block;
 
     &:not(:last-child) {
       margin-right: 25px;

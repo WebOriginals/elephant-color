@@ -1,30 +1,18 @@
 .sec_first-screen{
   padding: 30px 0 75px;
-
-  @if( $link-img == ''){
-    background-image: url("../img/sec1-1.png");
-  } @else {
-    background-image: url( $link-img + "/img/sec1-1.png");
-  }
   background-repeat: no-repeat;
-  background-position: 100px center;
-
+  background-position: top center;
   background-size: contain;
 
   @include mq('tablet') {
-    margin-left: 25px;
-    padding: 115px 0 109px;
-
-    background-position: right center;
+    padding: 0 0 109px;
   }
   @include mq('desktop1350') {
-    margin-left: 25px;
+    height: 100vh;
 
   }
   @include mq('2K') {
-    margin-left: 25px;
     padding: 170px 0 180px;
-
   }
 
 }
@@ -57,3 +45,14 @@
   }
   @include adaptiv-margin-bottom(100,75);
 }
+
+.first-screen__btn{
+  margin-top: 30vh;
+  @include mq('tablet') {
+    margin-top: 50vh;
+  }
+  background: $color1;
+  display: block;
+}
+
+

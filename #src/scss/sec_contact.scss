@@ -79,13 +79,21 @@
   }
 
   a {
+    color: $color2;
+    display: inline-flex;
     margin-right: 20px;
 
     &:hover {
+      color: $color3;
 
       path {
         fill: $color3;
       }
+    }
+    p{
+      align-self: center;
+      margin-bottom: 0;
+      margin-left: 15px;
     }
   }
 

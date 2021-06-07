@@ -52,8 +52,13 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  color: $color2;
   &:not(:last-child){
     @include adaptiv-margin-bottom(50,40);
+  }
+
+  &:hover{
+    color: $color2;
   }
 
   @include maq('phablet') {

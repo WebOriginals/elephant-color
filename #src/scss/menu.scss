@@ -30,6 +30,8 @@
   height: 3px;
   background: $color2;
   width: 25px;
+
+
 }
 
 .cmn-toggle-switch span::before {
@@ -131,6 +133,13 @@
       border-bottom: 1.5px solid $color3;
     }
   }
+  .link-menu-yellow{
+    color: $color3;
+    &:hover{
+      color: $color2;
+      border-bottom: 1.5px solid $color2;
+    }
+  }
   @include maq('desktop') {
     text-align: center;
   }
@@ -151,11 +160,12 @@
   -webkit-transition: all 1s ease-in-out;
   z-index: 900;
   @include mq('tablet') {
-    width: 300px;
+    width: 450px;
     top: 150px;
     padding: 20px 50px 20px;
     height: auto;
   }
+
 }
 
 .wrapper-menu.active {
@@ -169,6 +179,34 @@
   }
   @include mq('desktop') {
     margin-right: 170px;
+  }
+
+  &:hover {
+
+    .cmn-toggle-switch span:before {
+      background-color: $color3;
+    }
+
+    .cmn-toggle-switch span:after {
+      background-color: $color3;
+    }
+
+    .cmn-toggle-switch span {
+      background: $color3;
+    }
+  }
+
+  &.menu-hover:hover{
+
+    .cmn-toggle-switch span:before {
+      background-color: $color3;
+    }
+    .cmn-toggle-switch span:after {
+      background-color: $color3;
+    }
+    .cmn-toggle-switch span {
+      background: 0 0;
+    }
   }
 }
 .wrapper-soc-menu{

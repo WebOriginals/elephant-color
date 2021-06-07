@@ -153,10 +153,16 @@
 
 .descript-slide__price {
   @include adaptiv-font(20, 16);
+  background: none;
+  color: $color2;
 
   sup{
     @include adaptiv-font(10, 8);
     top: -10px;
+  }
+  &:focus,&:active{
+    outline: none;
+    border: none;
   }
 
 }
