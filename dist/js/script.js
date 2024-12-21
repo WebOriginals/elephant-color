@@ -99,14 +99,14 @@ ymaps.ready(init);
 function init () {
 
     myMap = new ymaps.Map('map', {
-        center: [45.350942, 39.058194],
+        center: [45.052468, 38.936883],
         controls: [ ],
         zoom: 13
     }, {
         searchControlProvider: 'yandex#search'
     });
 
-    var myPlacemark = new ymaps.Placemark([45.350942, 39.058194], {}, {
+    var myPlacemark = new ymaps.Placemark([45.052468, 38.936883], {}, {
         iconLayout: 'default#image',
         iconImageHref: 'img/ic/point.svg',
         iconImageSize: [30, 42],

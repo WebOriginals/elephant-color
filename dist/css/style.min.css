@@ -2458,44 +2458,57 @@ body {
         margin-bottom: 60px
     }
 }
+
+.sec-calculator{
+    padding: 60px 0;
+}
 .calculator {
     max-width: 400px;
-    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    background-color: #2c2c2c; /* Тёмный фон */
+    border: 1px solid #444;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    color: #ffffff; /* Светлый текст */
 }
 
 .calculator label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #f0f0f0; /* Светлый текст для меток */
 }
 
-.calculator input, .calculator select, .calculator button {
+.calculator input, .calculator select{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     border-radius: 5px;
+    background-color: #333; /* Темный фон для полей ввода */
+    color: #ffffff; /* Светлый текст внутри полей ввода */
 }
 
-.calculator button {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
 
-.calculator button:hover {
-    background-color: #45a049;
+
+.color-preview {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .result {
     margin-top: 20px;
     padding: 15px;
-    background-color: #e8f5e9;
-    border: 1px solid #c8e6c9;
+    background-color: #3a3a3a; /* Тёмно-серый фон результата */
+    border: 1px solid #555;
     border-radius: 10px;
+    color: #ffffff; /* Светлый текст в блоке результата */
 }
+
+
+.calculator button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #000;
+}
+
+
